@@ -1,8 +1,9 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
+
+import { cn } from "@/lib/utils";
 
 export function MainNav({ className, ...props }: React.HTMLAttributes<HTMLElement>) {
   const pathname = usePathname();
@@ -50,8 +51,9 @@ export function MainNav({ className, ...props }: React.HTMLAttributes<HTMLElemen
       active: pathname === `/${params.storeId}/settings`,
     },
   ];
+
   return (
-    <nav className={cn("flex items-center space-x-4 lg:space-x-6", className)}>
+    <nav className={cn("flex items-center space-x-4 lg:space-x-6", className)} {...props}>
       {routes.map((route) => (
         <Link
           key={route.href}
