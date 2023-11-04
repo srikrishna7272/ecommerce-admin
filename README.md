@@ -10,8 +10,8 @@ Ecommerce Store: https://ecommerce-store-sk.vercel.app/
 
 ## Features
 
-- We will be using Shadcn UI for the Admin!
-- Our admin dashboard is going to serve as both CMS, Admin and API!
+- Used Shadcn UI for the Admin!
+- Admin dashboard is going to serve as both CMS, Admin and API!
 - You will be able to control mulitple vendors / stores through this single CMS! (For example you can have a "Shoe store" and a "Laptop store" and a "Suit store", and our CMS will generate API routes for all of those individually!)
 - You will be able to create, update and delete categories!
 - You will be able to create, update and delete products!
@@ -22,7 +22,7 @@ Ecommerce Store: https://ecommerce-store-sk.vercel.app/
 - You will be able to control which products are "featured" so they show on the homepage!
 - You will be able to see your orders, sales, etc.
 - You will be able to see graphs of your revenue etc.
-- You will learn Clerk Authentication!
+- Authentication using clerk.
 - Order creation
 - Stripe checkout
 - Stripe webhooks
@@ -33,7 +33,7 @@ Ecommerce Store: https://ecommerce-store-sk.vercel.app/
 Clone the project
 
 ```bash
-  git clone https://github.com/srikrishna7272/ecommerce-admin.git
+  git clone https://github.com/srikrishna7272/ecommerce-store.git
 ```
 
 Install dependencies
@@ -46,35 +46,7 @@ Add Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=`
-
-`CLERK_SECRET_KEY=`
-
-`NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in`
-
-`NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up`
-
-`NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/`
-
-`NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/`
-
-`DATABASE_URL=''`
-
-`NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""`
-
-`STRIPE_API_KEY=`
-
-`FRONTEND_STORE_URL=http://localhost:3001`
-
-`STRIPE_WEBHOOK_SECRET=`
-
-Connect to PlanetScale and Push Prisma
-
-```bash
-  npx prisma generate
-
-  npx prisma db push
-```
+`NEXT_PUBLIC_API_URL=`
 
 Start the app
 
