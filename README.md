@@ -33,7 +33,7 @@ Ecommerce Store: https://ecommerce-store-sk.vercel.app/
 Clone the project
 
 ```bash
-  git clone https://github.com/srikrishna7272/ecommerce-store.git
+  git clone https://github.com/srikrishna7272/ecommerce-admin.git
 ```
 
 Install dependencies
@@ -46,7 +46,35 @@ Add Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`NEXT_PUBLIC_API_URL=`
+`NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=`
+
+`CLERK_SECRET_KEY=`
+
+`NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in`
+
+`NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up`
+
+`NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/`
+
+`NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/`
+
+`DATABASE_URL=''`
+
+`NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""`
+
+`STRIPE_API_KEY=`
+
+`FRONTEND_STORE_URL=http://localhost:3001`
+
+`STRIPE_WEBHOOK_SECRET=`
+
+Connect to PlanetScale and Push Prisma
+
+```bash
+  npx prisma generate
+
+  npx prisma db push
+```
 
 Start the app
 
